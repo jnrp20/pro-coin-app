@@ -1,0 +1,19 @@
+.btnLogin{
+    background: #19885b;
+    width: 25%;
+    height: 55%;
+    display: flex;
+    justify-content: center; align-items: center;
+    border-radius: 82px 82px 82px 82px;
+    margin-left: 1vw;
+
+  }
+  .btnLogin a{
+    color: white;
+    font-weight: 700;
+  }
+
+  .btnLogin:hover{
+
+    background: #2bae79;
+  }

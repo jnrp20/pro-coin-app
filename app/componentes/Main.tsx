@@ -1,11 +1,14 @@
+import BtnLogin from './BtnLogin';
 
-export default function Principal() {
+
+export default function Main() {
     return (
+      
       <div className="Container">
         <nav>
           <div className="NavLogo">
               <img src='./trueno.png' alt="" />
-              <h1>CashierPro</h1>
+              <h1>NOMBRE</h1>
           </div>
           <div className="NavOptions">
             <a href="">Donaciones</a>
@@ -15,6 +18,8 @@ export default function Principal() {
           </div>
           <div className="NavRegister">
               <a href="">Resgistrarse</a>
+              
+              <BtnLogin/>
           </div>
         </nav>
       </div>
