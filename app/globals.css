@@ -2,87 +2,77 @@
 @tailwind components;
 @tailwind utilities;
 
-
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
-    /* aqui se reinician los valores de todos los margin y padding de la pag web */
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-  }
-  
-  
-  
-  .Container {
-    width: 100vw;
-    height: 100vh;
-  }
-  nav {
- 
-    width: 100vw;
-    height: 9vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 0 15px #47c13448;
-  }
-  .NavLogo,
-  .NavOptions,
-  .NavRegister {
-    width: 33vw;
-    height: 100%;
-    display: flex;
-  
-    align-items: center;
-  }
-  .NavOptions {
-    justify-content: space-around;
-  }
- 
+  /* aqui se reinician los valores de todos los margin y padding de la pag web */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .NavRegister {
-    justify-content: center;
-  }
-  .NavLogo{
-      justify-content: center;
-  }
-  .NavLogo img {
-    height: 80%;
-  }
-  
-  .NavOptions a,
-  .NavRegister a {
-    text-decoration: none;
+nav {
+  position: fixed;
+  background-color: #fff;
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 15px #47c13448;
+}
+.NavLogo,
+.NavOptions,
+.NavRegister {
+  width: 33vw;
+  height: 100%;
+  display: flex;
+
+  align-items: center;
+}
+.NavOptions {
+  justify-content: space-around;
+}
+
+.NavRegister {
+  justify-content: center;
+}
+.NavLogo {
+  justify-content: center;
+}
+.NavLogo img {
+  height: 80%;
+}
+
+.NavOptions a,
+.NavRegister a {
+  text-decoration: none;
   font-weight: 600;
-  font-size: 17px;
-  
-    color: #757575;
-    position: relative;
+  font-size: 19px;
 
+  color: #000000;
+  position: relative;
+}
 
-  }
-  
-   .NavOptions a:after{
-
-    content: "";
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #616161;
-    position: absolute;
-    bottom:  0;
-    left:0;
+.NavOptions a:after {
+  z-index: -1;
+  content: "";
+  display: block;
+  width: 0;
+  height: 10px;
+  background: #82eb219a;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   transition: 0.3s;
+}
+.NavOptions a:hover:after {
+  width: 100%;
+}
+.NavOptions a:hover {
+  color: rgb(71, 69, 69);
+}
 
-
-  }
-  .NavOptions a:hover:after{
-    width: 100%;
-  }
-  .NavOptions a:hover{
-    color: rgb(71, 69, 69);
-  }
+.NavRegister a {
+  color: #19885b;
+}

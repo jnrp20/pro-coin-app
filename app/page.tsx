@@ -1,8 +1,13 @@
-import Image from "next/image";
-import Main from "./componentes/Main";
+import BtnLogin from './ui/BtnLogin';
+import NavBar from './ui/navBar';
 
-export default function Home() {
-  return (
-    <Main/>
-  );
-}
+
+export default function Main() {
+    return (
+      
+      <div>
+        <NavBar/>
+        
+      </div>
+    );
+  }

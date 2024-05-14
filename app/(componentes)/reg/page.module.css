@@ -1,0 +1,58 @@
+.container {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 8vh;
+  display: flex;
+}
+.SubCont1,
+.SubCont2 {
+  width: 50%;
+  height: 100%;
+}
+
+.SubCont1 {
+  background-color: #6bd066;
+  padding: 2% 10%;
+}
+.SubCont1 h1 {
+  font-size: 40px;
+
+  font-weight: 600;
+  color: rgb(39, 40, 40);
+}
+.SubCont1 p {
+  font-size: 20px;
+}
+
+.lista {
+    position: relative;
+}
+.lista li{
+    margin-top: 2%;
+    margin-left: 3%;
+    font-size: 20px;
+    line-height: 31px;
+}
+
+.lista li:before{
+
+   content: '';
+   margin-top: 2%;
+   width: 30px; height:30px;
+   position: absolute;
+  background-image: url('../media/circulo-de-flecha.png');
+  background-position:  center; /* Posiciona la imagen a la izquierda */
+  background-size: cover;
+  left: -30px;
+
+  
+  
+}
+
+.SubCont2 {
+  background-image: url("../media/regFondo2.jpg");
+  background-size: cover; /* Para que la imagen se ajuste y cubra todo el div */
+  background-position: 50% 50%; /* Para centrar la imagen en el div */
+  background-repeat: no-repeat; /* Para evitar que la imagen se repita */
+}
