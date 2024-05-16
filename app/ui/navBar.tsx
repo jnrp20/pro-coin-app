@@ -16,7 +16,7 @@ export default function NavBar() {
       </div>
       <div className="NavOptions">
         <Link href="/about">Sobre BumWallet</Link>
-        <Link href="/donate">Apoyamos</Link>
+        <Link href="/donate">Apóyanos</Link>
         <Link href="/social">Nuestras Redes</Link>
         <Link href="/contact">Contactanos</Link>
       </div>
