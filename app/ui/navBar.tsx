@@ -1,9 +1,7 @@
 import React from "react";
-import BtnLogin from "@/app/ui/BtnLogin";
+
 import Image from "next/image";
-import Link from 'next/link'
-
-
+import Link from "next/link";
 
 // los estilos de este componente estan en el css global
 export default function NavBar() {
@@ -11,7 +9,7 @@ export default function NavBar() {
     <nav>
       <div className="NavLogo">
         <Link href="/">
-          <Image src="/logoBum.png" width={190} height={250} />
+          <Image src="/logoBum.png" width={190} height={250} alt="" />
         </Link>
       </div>
       <div className="NavOptions">
@@ -23,7 +21,9 @@ export default function NavBar() {
       <div className="NavRegister">
         <Link href="/reg">Resgistrarse</Link>
 
-        <BtnLogin />
+        <div className="btnLogin">
+          <Link href="/login">Iniciar Sesion</Link>
+        </div>
       </div>
     </nav>
   );

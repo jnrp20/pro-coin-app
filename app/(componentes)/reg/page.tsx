@@ -42,13 +42,13 @@ export default function Register() {
           </ul>
           <br />
 {/* <h2>PROXIMAMENTE DOSPONIBLE EN</h2>
-<Image src="/apple.svg" width={184} height={50} />
-<Image src="/google.svg" width={184} height={50} /> */}
+<Image src="/media/apple.svg" width={184} height={50} />
+<Image src="/media/google.svg" width={184} height={50} /> */}
 
         </div>
         <div className={Style.SubCont2}>
           <div className={Style.form}>
-            <Image src="/trueno.png" width={50} height={50} />
+            <Image src="/media/trueno.png" width={50} height={50} alt=""/>
             <h1>Registrate</h1>
             <form>
               <br />
@@ -79,11 +79,14 @@ export default function Register() {
                 required
               />
               <br />
-              <BtnForm>Registrarse</BtnForm>
+              <div className={Style.boton}>
+                <BtnForm>Registrarse</BtnForm>
                 <br />
+                
               <p>
-                Al dar click acepto los <a href="">terminos y condicines</a>
+                Al registrarse aceptas los <a href="">terminos y condicines</a>
               </p>
+              </div>
             </form>
           </div>
         </div>

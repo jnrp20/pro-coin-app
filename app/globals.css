@@ -11,7 +11,12 @@
   box-sizing: border-box;
 }
 
+input:focus {
+  outline: none;
+}
+
 nav {
+  z-index: 4;
   position: fixed;
   background-color: #fff;
   width: 100vw;
@@ -19,7 +24,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 0 15px #47c13448;
+  box-shadow: 0 0 15px #40404048;
 }
 .NavLogo,
 .NavOptions,
@@ -75,4 +80,36 @@ nav {
 
 .NavRegister a {
   color: #19885b;
+}
+.btnLogin{
+  background: #19885b;
+  width: 25%;
+  height: 55%;
+  display: flex;
+  justify-content: center; align-items: center;
+  border-radius: 82px 82px 82px 82px;
+  margin-left: 1vw;
+position: relative;
+}
+.btnLogin a{
+  color: white;
+  font-weight: 700;
+}
+
+.btnLogin:hover{
+
+  background: #2bae79;
+}
+
+.btnLogin:before{
+
+  content: "";
+  display: block;
+  width: 2px;
+  height: 40px;
+  background: #616161;
+  position: absolute;
+  bottom:  0;
+  left:-10px;
+
 }

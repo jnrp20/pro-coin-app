@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
-import { Public_Sans } from "next/font/google";
+import { Poppins } from "next/font/google";
 
 import "./globals.css";
 
-const publicSans = Public_Sans({ subsets: ["latin"] });
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: "300"
+});
 
 
 export const metadata: Metadata = {
@@ -18,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={publicSans.className}>{children}</body>
+      <body className={poppins.className}>{children}</body>
     </html>
   );
 }
