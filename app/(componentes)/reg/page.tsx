@@ -1,18 +1,23 @@
+
 import React from "react";
 import Style from "@/app/(componentes)/reg/page.module.css";
 import NavBar from "@/app/ui/navBar";
 import Image from "next/image";
-import { Input } from "@/app/ui/input";
-import Label from "@/app/ui/label";
-import BtnForm from "@/app/ui/btnForm";
+import FormRegister from "@/app/ui/formRegister";
+
+
+
+
 
 export default function Register() {
+  
+
   return (
     <div>
       <NavBar />
       <div className={Style.container}>
         <div className={Style.SubCont1}>
-          <h1>BumWallet: Domina tus Finanzas. Ordena tu dinero</h1>
+          <h1>Con BumWallet: Domina tus Finanzas. Ordena tu dinero</h1>
           <br />
           <p>
             Experimenta la Facilidad, la Rapidez y la Intuitividad: La App que
@@ -41,53 +46,18 @@ export default function Register() {
             </li>
           </ul>
           <br />
-{/* <h2>PROXIMAMENTE DOSPONIBLE EN</h2>
-<Image src="/media/apple.svg" width={184} height={50} />
-<Image src="/media/google.svg" width={184} height={50} /> */}
-
+            <h2>PROXIMAMENTE DOSPONIBLE EN</h2>
+          <div className={Style.StoreLogo}>
+            <Image src="/media/apple.svg" width={184} height={50} alt="" />
+            <Image src="/media/google.svg" width={184} height={50} alt=""/>
+            <Image src="/media/huawei.png" width={184} height={50} alt=""/>
+          </div>
         </div>
         <div className={Style.SubCont2}>
           <div className={Style.form}>
-            <Image src="/media/trueno.png" width={50} height={50} alt=""/>
+            <Image src="/media/trueno.png" width={50} height={50} alt="" />
             <h1>Registrate</h1>
-            <form>
-              <br />
-              <Label htmlFor="name">Nombre de usuario</Label>
-              <Input placeholder="UserName" type="text" id="name" required />
-              <br />
-              <Label htmlFor="email">Correo electrónico</Label>
-              <Input
-                placeholder="yourEmail@example.com"
-                type="text"
-                id="email"
-                required
-              />
-              <br />
-              <Label htmlFor="password">Contraseña</Label>
-              <Input
-                placeholder="******************"
-                type="password"
-                id="password"
-                required
-              />
-              <br />
-              <Label htmlFor="Confpassword">Confirmar contraseña</Label>
-              <Input
-                placeholder="******************"
-                type="password"
-                id="Confpassword"
-                required
-              />
-              <br />
-              <div className={Style.boton}>
-                <BtnForm>Registrarse</BtnForm>
-                <br />
-                
-              <p>
-                Al registrarse aceptas los <a href="">terminos y condicines</a>
-              </p>
-              </div>
-            </form>
+            <FormRegister/>
           </div>
         </div>
       </div>

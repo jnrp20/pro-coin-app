@@ -13,7 +13,7 @@
 
 .SubCont1 {
   background-color: #6bd066;
-  padding: 7% 9%;
+  padding: 5% 9%;
 }
 .SubCont1 h1 {
   font-size: 40px;
@@ -21,6 +21,15 @@
   font-weight: 600;
   color: rgb(39, 40, 40);
 }
+.StoreLogo{
+width: 100%;
+height: auto;
+display: flex;
+justify-content: center;
+margin-top: 5%;
+}
+
+
 .SubCont1 p {
   font-size: 20px;
 }
@@ -64,7 +73,7 @@
 
 .form{
   width: 70%;
-  height: 80%;
+  height: auto;
   padding: 2% 1%;
   background-color: #fff;
   border-radius: 42px 42px 42px 42px;
@@ -80,6 +89,17 @@
   width: 80%; height: 80%;
   
 }
+
+.form ul{
+  
+  font-size: 15px;
+  color: #5d5b5b;
+  list-style-type: disc;
+
+  padding-left: 5%;
+}
+
+
 .form h1{
 color: #464545;
 font-size: 25px;
